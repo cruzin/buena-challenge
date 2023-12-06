@@ -1,0 +1,54 @@
+.doNotDisplay {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.display {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.multiStepWrapper {
+  > div > div {
+    &:last-child div {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      > *:disabled {
+        opacity: 0;
+      }
+    }
+  }
+
+  > div > ol > li {
+    &:first-child {
+      @media(min-width: 400px) {
+        margin-left: auto;
+      }
+
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 300px; //transition: fade-in 1s ease-in-out;
+  outline: 2px solid var(--bs-border-color);
+  border-radius: 2rem;
+  justify-content: space-around;
+}
+
+.formInput {
+  width: clamp(250px, 50%, 450px);
+  margin: auto;
+}
