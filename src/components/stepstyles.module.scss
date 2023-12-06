@@ -1,0 +1,27 @@
+.submitButton{
+  font-size: 1.25rem;
+  &:disabled{
+    background-color: var(--bs-border-color);
+    border-color: var(--bs-border-color);
+  }
+  &:hover{
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+  }
+  background-color: var(--bs-border-color);
+  border-color: var(--bs-border-color);
+  color: black;
+
+}
+
+.formSubmit{
+  width: clamp(250px, 50%, 450px);
+  margin: auto;
+}
+
+.submitCheck > input{
+  &:checked{
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+  }
+}
