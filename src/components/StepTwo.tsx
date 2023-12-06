@@ -44,7 +44,6 @@ const IncomeRange = () => {
                             type={"radio"}
                             id={`${range}`}
                             label={`${range}`}
-                            // @ts-ignore
                         />
                     )
                 })}

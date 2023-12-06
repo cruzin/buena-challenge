@@ -16,14 +16,7 @@ function App() {
             <Container className="mt-5">
                 <Row className="justify-content-center">
                     <Col xs={12} md={8} className={classNames(styles.multiStepWrapper)}>
-                        <MultiStep activeStep={0} prevButton={prevButton} nextButton={nextButton} showNavigation={true}
-                                   stepCustomStyle={{
-                                       // margin:"auto",
-                                       // @ts-ignore
-                                       // '&:firstChild': {
-                                       //     margin: "20rem"
-                                       // }
-                                   }}>
+                        <MultiStep activeStep={0} prevButton={prevButton} nextButton={nextButton} showNavigation={true}>
                             <StepOne/>
                             <StepTwo/>
                             <StepThree/>
