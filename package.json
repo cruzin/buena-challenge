@@ -28,8 +28,8 @@
     "start": "react-scripts start",
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "e2e-test": "npx cypress open",
-    "e2e-test-headless": "npx cypress run",
+    "e2e-tests": "npx cypress open",
+    "e2e-tests-headless": "npx cypress run",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
