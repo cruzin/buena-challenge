@@ -21,13 +21,15 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "cypress": "^13.6.1",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "e2e-test": "npx cypress open",
+    "e2e-test-headless": "npx cypress run",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
